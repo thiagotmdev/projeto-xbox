@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #509550;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    padding: 20px 160px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+ body::before{
+    content: '';
+    background: #202020;
+    position: absolute;
+    top: 0;
+    left: -600px;
+    transform: rotate(-70deg);
+    width: 100%;
+    height: 120%;
+}
+
+body::after {
+    content: 'XBOX';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 250px;
+    font-weight: bold;
+    /* grossura da fonte */
+    opacity: 0.5;
+} 
+
+.logo{
+    width: 80px;
+}
+
+h1{
+    font-size: 80px;
+    color: #FFFFFF;
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
+
+.shopping-cart{
+    background: #a3be52;
+    padding: 10px 20px;
+    border-radius: 20px;
+    /* arredondar a borda */
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.shopping-cart:hover{
+    opacity: 0.7;
+}
+
+.product{
+    width: 800px;
+    transform: rotate(-25deg);
+    filter: drop-shadow(30px 45px 40px #161616);
+    transition: 1s;
+}
+
+.change-effect {
+    opacity: 0;
+    transform: rotate(-25deg) translateY(-35px);
+}
+
+.container-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75%;
+    position: relative;
+    z-index: 1;
+}
+
+.right-side{
+    max-width: 500px;
+}
+
+.buttons-box{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+
+.button{
+    width: 120px;
+    height: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button:active{
+    opacity: 0.6;
+}
+
+.serie_x-button{
+    background-color: #323432;
+    padding: 5px;
+    text-align: center;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.serie_s-button{
+    background-color: #FFFFFF;
+    padding: 5px;
+    text-align: center;
+    font-weight: 700;
+}
